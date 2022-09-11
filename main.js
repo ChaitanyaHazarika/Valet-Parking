@@ -80,7 +80,7 @@ function up()
 function down()
 {
 	
-	if (greencar_y <= canvas.height) {
+	if (greencar_y <= canvas.height-100) {
 		greencar_y = greencar_y+10
 		
 		uploadBackground()
@@ -104,7 +104,7 @@ function left()
 function right()
 {
 	
-	if (greencar_x <= canvas.width) {
+	if (greencar_x <= canvas.width-75) {
 		greencar_x = greencar_x+10
 		console.log("when up arrow is pressed, x= "+ greencar_x + "| y= "+ greencar_y)
 		uploadBackground()
